@@ -14,14 +14,15 @@ isabel_island = """ooooooooooo
                    ooooooooooo"""
 
 X = 1
-size = 0
+o = 0
+count = 0
 
-for X in range(0,len(isabel_island)):
-    #print (isabel_island[X])
+for i in range(len(isabel_island)):
+    print (isabel_island[i])
     if X % 2 == 1:
-        size = size + 1
-    else:
-print(size)
+        count =+ 1
+
+print(count)
 
 #        result = result + isabel_island[i]
 #        print (result)

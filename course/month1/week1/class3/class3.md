@@ -141,6 +141,7 @@ In fact, in Ruby print() is puts() and the s in puts stands for string; puts rea
 This may not seem too exciting now, but Python has many, many kinds of objects (you’ll even learn how to make your own), and it’s nice to know what will happen if you try to print a really weird object, such as a picture of your grandmother or a music file or something. It’ll always be converted to a string first. But that will come later. In the meantime, we have a few more methods for you, and they allow us to write all sorts of fun programs.
 
 #### The input() Method
+#Need to work out why I may be having problems with this...
 
 If print() means print a string, I’m sure you can guess what input() stands for. And just as print() always spits out strings, input() retrieves only strings. And whence does it get them?
 
@@ -171,7 +172,7 @@ The only thing is that you missed some stuff there that you didn’t really need
 
 - Bigger, better favorite number. Write a program that asks for a person’s favorite number. Have your program add 1 to the number, and then suggest the result as a bigger and better favorite number. (Do be tactful about it, though.)
 
-#### Mind Your Variables
+#### Mind Your Variables - look at this anyway later
 
 >Skip
 

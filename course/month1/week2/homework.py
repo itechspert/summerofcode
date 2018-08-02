@@ -1,29 +1,28 @@
 #Week 1 class 4:
-
-"""
+'''
 Leap years. Write a program that asks for a starting year and an ending year and
 then puts all the leap years between them (and including them, if they are also
 leap years). Leap years are years divisible by 4 (like 1984 and 2004). However,
 years divisible by 100 are not leap years (such as 1800 and 1900) unless they are
 also divisible by 400 (such as 1600 and 2000, which were in fact leap years). What a mess!
-"""
-leapyear = [0, 4]
-y = 0
-def leapyear_determinator():
-    for y in range(0, 2000):
-        year = y
-        if year % 400 == 0:
-            #print(year)
-            leapyear.append(year)
-        elif year % 4 == 0:
-            if year % 100 != 0:
-                #print(year)
-                leapyear.append(year)
 
-leapyear_determinator()
-#print(leapyear)
+annual = 0
+a = 0
 
-'''
+###
+x = int(input("Give me a start year: \n > "))
+print("You gave me the number: " , str(x))
+y = int(input("Give me an end year: \n > "))
+print("You gave me the number: ", str(y))
+print(x, y)
+
+for a in range(x, y, 4):
+    annual = a
+    if annual % 400 == 0:
+        print(annual)
+    elif annual % 100 != 0:
+        print(annual)
+
 start_year = ""
 end_year = ""
 input("Give me a start year")
@@ -35,14 +34,39 @@ x = input("Give me a start year")
 y = input("Give me an end year")
 for i in leapyear(x, y)
 
-- Building and sorting an array. Write the program that asks us to type as many words as we want (one word per line, continuing until we just press Enter on an empty line) and then repeats the words back to us in alphabetical order. Make sure to test your program thoroughly; for example, does hitting Enter on an empty line always exit your program? Even on the first line? And the second?
+- Building and sorting an array. Write the program that asks us to type as many
+words as we want (one word per line, continuing until we just press Enter on an
+empty line) and then repeats the words back to us in alphabetical order. Make
+sure to test your program thoroughly; for example, does hitting Enter on an
+empty line always exit your program? Even on the first line? And the second?
 
-Hint: There’s a lovely array method that will give you a sorted version of an array: sorted(). Use it!
 
-- Table of contents. Write a table of contents program here. Start the program with a list holding all of the information for your table of contents (chapter names, page numbers, and so on). Then print out the information from the list in a beautifully formatted table of contents. Use string formatting such as left align, right align, center.
+def word_function():
+    words = []
+    while 0 == 0:
+        new_word = input("What word would you like to add to my list?")
+        if new_word == "":
+            break
+        elif new_word != "":
+            words.append(new_word)
+            print(words)
+    print(sorted(words))
 
+word_function()
+'''
+'''
+- Table of contents. Write a table of contents program here. Start the program
+with a list holding all of the information for your table of contents (chapter
+names, page numbers, and so on). Then print out the information from the list
+in a beautifully formatted table of contents. Use string formatting such as
+left align, right align, center.'''
 
-### Writing Your Own Functions
+table = [["chapter 1", "chapter 2", "chapter 3", "chapter 4", "chapter 5"],
+["Introduction", "Living happily", "Testing limits", "Writing stories", "Concluding remarks"],
+["1-7", "7-12", "12-22", "22-26", "27-40"]]
+print(table[1,1]
+
+'''### Writing Your Own Functions
 
 A function is a block of code which only runs when it is called.
 
@@ -62,7 +86,8 @@ say_moo()
 
 Information can be passed to functions as parameter.
 
-Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma.
+Parameters are specified after the function name, inside the parentheses.
+ You can add as many parameters as you want, just separate them with a comma.
 
 ```python
 def praise(student):
@@ -90,9 +115,15 @@ Write a function that prints out "moo" n times.
 
 #### Return Values
 
-You may have noticed that some methods give you something back when you call them. For example, we say gets returns a string (the string you typed in), and the + method in 5+3 (which is really 5.+(3)) returns 8. The arithmetic methods for numbers return numbers, and the arithmetic methods for strings return strings.
-
-It’s important to understand the difference between a method returning a value (returning it to the code that called the method), and your program outputting information to your screen, like print() does, which we call a **side-effect**. Notice that 5+3 returns 8; it does not output 8 (that is, display 8 on your screen).
+You may have noticed that some methods give you something back when you call
+them. For example, we say gets returns a string (the string you typed in),
+and the + method in 5+3 (which is really 5.+(3)) returns 8. The arithmetic
+methods for numbers return numbers, and the arithmetic methods for strings
+return strings. It’s important to understand the difference between a method
+returning a value (returning it to the code that called the method), and your
+program outputting information to your screen, like print() does, which we call
+a **side-effect**. Notice that 5+3 returns 8; it does not output 8 (that is,
+display 8 on your screen).
 
 So, what does print() return? We never cared before, but let’s look at it now:
 
@@ -266,7 +297,7 @@ frequency_distribution = [
     ...
     ["z", 450]
 ]
-``` """
+``` """'''
 
 '''#### Things to try
 

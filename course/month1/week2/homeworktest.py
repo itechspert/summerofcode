@@ -1,9 +1,4 @@
-words = []
+def say_moo(n):
+    print('moo ' * n)
 
-while 0 == 0:
-    new_word = input("What word would you like to add to my list?")
-    if new_word == "":
-        break
-    elif new_word != "":
-        words.append(new_word)
-        print(words.sort)
+say_moo(7)

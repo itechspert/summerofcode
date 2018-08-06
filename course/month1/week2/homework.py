@@ -40,7 +40,7 @@ empty line) and then repeats the words back to us in alphabetical order. Make
 sure to test your program thoroughly; for example, does hitting Enter on an
 empty line always exit your program? Even on the first line? And the second?
 
-
+'''
 def word_function():
     words = []
     while 0 == 0:
@@ -53,20 +53,21 @@ def word_function():
     print(sorted(words))
 
 word_function()
-'''
+
 '''
 - Table of contents. Write a table of contents program here. Start the program
 with a list holding all of the information for your table of contents (chapter
 names, page numbers, and so on). Then print out the information from the list
 in a beautifully formatted table of contents. Use string formatting such as
 left align, right align, center.'''
-
+''''
 table = [["chapter 1", "chapter 2", "chapter 3", "chapter 4", "chapter 5"],
 ["Introduction", "Living happily", "Testing limits", "Writing stories", "Concluding remarks"],
 ["1-7", "7-12", "12-22", "22-26", "27-40"]]
-print(table[1,1]
+print(table[1])
 
-'''### Writing Your Own Functions
+'''
+### Writing Your Own Functions
 
 A function is a block of code which only runs when it is called.
 
@@ -80,7 +81,6 @@ def say_moo():
 
 # let's call it
 say_moo()
-```
 
 #### Function Parameters
 
@@ -89,12 +89,11 @@ Information can be passed to functions as parameter.
 Parameters are specified after the function name, inside the parentheses.
  You can add as many parameters as you want, just separate them with a comma.
 
-```python
+python
 def praise(student):
     print(student + " is an amazing Pythonista!")
 
 praise("Katie")
-```
 
 The following example shows how to use a default parameter value.
 
@@ -106,15 +105,15 @@ def praise(student = "Melinda"):
 
 praise()
 
->>>Melinda is an amazing Pythonista!
+Melinda is an amazing Pythonista!
 ```
 
 #### Thing to Try
 
 Write a function that prints out "moo" n times.
-
+'''
+'''
 #### Return Values
-
 You may have noticed that some methods give you something back when you call
 them. For example, we say gets returns a string (the string you typed in),
 and the + method in 5+3 (which is really 5.+(3)) returns 8. The arithmetic
@@ -160,7 +159,8 @@ D = 500
 M = 1000
 
 - “Modern” Roman numerals. Eventually, someone thought it would be terribly clever if putting a smaller number before a larger one meant you had to subtract the smaller one. As a result of this development, you must now suffer. Rewrite your previous method to return the new-style Roman numerals so when someone calls roman_numeral 4, it should return 'IV', 90 should be 'XC' etc.
-
+'''
+'''
 
 ## Helpful links
 
@@ -194,7 +194,6 @@ for i in range(65,65+2*26):
 #Fix the above so it prints only A-Z and a-z
 
 """
-'''
 Make a function that prints A-Z and a-z
 Make a function that asks the user for a message and turns it into a list of numbersself.
 E.g. "I LOVE YOU" -> [73, , 76, , ...] It's a cypher;))
@@ -298,8 +297,7 @@ frequency_distribution = [
     ["z", 450]
 ]
 ``` """'''
-
-'''#### Things to try
+#### Things to try
 
 Review the chat reply of today's beautiful class interaction and instantiate a student variable for everyone who shared their dream.
 
